@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Menu from './components/Menu'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <div className="App">
+        <Menu itemName={"Calamari"} desc = "Its some fried squid but its good tho" price = {12.99} orders= {12}></Menu>
+        <Menu itemName={"Al Pastor tacos"} desc= {"Tacos made exquisitly with a blend of squid and other secret ingredients "} price = {3.99} orders= {1}></Menu>
+        <Menu itemName= {"Salmon"} desc= {"Omega 3 tho "} price = {30.99} orders= {100}></Menu>
+        <Menu itemName= {"Menudo"} desc= {"The menudo be on our menu tho"} price = {10.99} orders= {2}></Menu>
+        <Menu itemName= {"Ramen"} desc= {"its not the Top Ramen tho"} price = {15.99} orders= {120}></Menu>
+        
+      </div>
   );
 }
 
